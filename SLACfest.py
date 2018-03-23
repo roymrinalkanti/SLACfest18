@@ -19,7 +19,7 @@ def main():
         #print('{} seconds'.format(time.time()-last_time))
         last_time = time.time()
         cv2.imshow('window',cv2.Canny(cv2.cvtColor(printscreen, cv2.COLOR_BGR2GRAY), threshold1= 200, threshold2=300))
-        if cv2.waitKey(1) & 0xFF == ord('q'):
+        if cv2.waitKey(0) & 0xFF == ord('q'):
             print('done')
             cv2.destroyAllWindows()
             break
